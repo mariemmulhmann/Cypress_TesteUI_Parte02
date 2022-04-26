@@ -1,0 +1,25 @@
+{
+  "name": "cypress_testeui_parte02",
+  "version": "1.0.0",
+  "description": "Testes criados a partir do Módulo 12 do curso de Engenharia de Qualidade de Software da EBAC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariemmulhmann/Cypress_TesteUI_Parte02.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariemmulhmann/Cypress_TesteUI_Parte02/issues"
+  },
+  "homepage": "https://github.com/mariemmulhmann/Cypress_TesteUI_Parte02#readme",
+  "devDependencies": {
+    "cypress": "^9.6.0"
+  }
+}
