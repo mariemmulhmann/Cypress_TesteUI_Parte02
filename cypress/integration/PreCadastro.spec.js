@@ -20,9 +20,9 @@ describe('Funcionalidade Pré Cadastro', () => {
     });
 
     it('Deve completar o pré cadastro com sucesso', () => {
-        let emailFaker       = faker.internet.email()
+        let emailFaker       = faker.internet.email(nomeFaker)
         let nomeFaker        = faker.name.firstName()
-        let sobrenomeFaker   = faker.name.lastName(nomeFaker)
+        let sobrenomeFaker   = faker.name.lastName()
         
         cy.get('#reg_email').type(emailFaker)
         cy.get('#reg_password').type('teste@teste.com')
@@ -36,4 +36,11 @@ describe('Funcionalidade Pré Cadastro', () => {
 
     });
 
+    it.only('Deve completar o pré-cadastro com sucesso  com sucesso usando Comandos Customizados', () => {
+        let emailFaker2       = faker.internet.email(nomeFaker2)
+        let nomeFaker2        = faker.name.firstName()
+        let sobrenomeFaker2   = faker.name.lastName()
+        
+        cy.preCadastro(emailFaker2, 'teste@teste.com', nomeFaker2, sobrenomeFaker2)
+    });
 });

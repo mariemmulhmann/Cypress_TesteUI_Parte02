@@ -25,9 +25,9 @@ context('Funcionalidade Login', () => {
     });
 
      //O será feito depois de cada um dos testes
-    afterEach(() => {
+   /* afterEach(() => {
         cy.screenshot()
-    });
+    });*/
 
     //estrutura do cenário
     it('Deve fazer login com sucesso', () =>{
