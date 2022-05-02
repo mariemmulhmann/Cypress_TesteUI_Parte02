@@ -16,7 +16,7 @@ DocTeste({
 describe('Funcionalidade Pagina de Produtos', () => {
     
     beforeEach(() => {
-        cy.visit('produtos/')
+        cy.visit('/produtos/')
     });
 
     it('Deve selecionar um produto da lista', () => {
