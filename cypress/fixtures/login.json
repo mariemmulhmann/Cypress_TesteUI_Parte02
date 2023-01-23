@@ -1,0 +1,8 @@
+{
+    "LoginE2E": {
+        "telaPrincipal": true,
+        "usuario": "aluno_ebac@teste.com",
+        "senha": "teste@teste.com",
+        "entrar": true
+    }
+}
