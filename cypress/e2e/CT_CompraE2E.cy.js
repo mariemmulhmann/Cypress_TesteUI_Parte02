@@ -17,7 +17,11 @@ context('Funcionalidade Login > Pesquisa categoria > Seleção do item > Detalhe
         LoginPage.Login_WEB(dadosLogin.LoginE2E);
         PesquisaCategoria.Pesquisa(dadosPesquisaCategoria.pesquisaCategoria);
         SelecionaItemPage.Seleciona(dadosSelecionaItem.TesteE2E);
-        cy.detalhesProdutos('M', 'Orange', '4');
+        cy.detalhesProdutos('33', 'Blue', '4');
         VerCarrinhoPage.carrinho();
+        VerCarrinhoPage.detalhesCarrinho('Livingston All-Purpose Tight - 33, Blue', 'R$75,00', 4, 'R$300,00');
+        VerCarrinhoPage.concluirCarrinho();
+        VerCarrinhoPage.finalizarCompra();
+        VerCarrinhoPage.pedidoRecebido();
     });
 });
